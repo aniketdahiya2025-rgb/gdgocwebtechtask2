@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Website</title>
     <style>
+        @media screen and (max-width: 3000px) {
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -44,8 +46,6 @@
             font-size : 15px;
             margin : 20px;
             margin-left : -40px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease;
         }
         .animated-button:hover {
         background-color: #005bb5;
@@ -166,7 +166,7 @@
         }
         .displaycardsimg{
             border-radius: 10px;
-            width: 30%;
+            width: 60%;
             height: auto;
         }
         .cards{
@@ -186,7 +186,33 @@
             border-radius: 20px;
             justify-content: space-around;
             align-items: center;
+            width : 100%;
         }
+        .cards5{
+             background-color: #000;
+            display: flex;
+            justify-content:space-evenly;
+            margin: 60px;
+            padding: 20px;
+            align-items: center;
+        }
+        .imageupdate{
+            width: 300px; 
+            height: auto; 
+            border-radius: 20px; 
+            margin-left: 280%; 
+            align-items: center;
+        }
+    }
+    @media (max-width: 900px) {
+        .imageupdate{
+            width: 90%; 
+            height: auto; 
+            border-radius: 20px; 
+            margin-left: 10%; 
+            align-items: center;
+        }
+    }
     </style>
 </head>
 <body>
@@ -201,7 +227,7 @@
         </ul>
         <h1>🟢Creatix</h1>
         <ul type="none" align="left">
-            <li><a href=abc>Portfolio</a></li>
+            <li><a href=portfolio.html>Portfolio</a></li>
         </ul>
         <ul>
             <li><a href=contact.html>Contact</a></li>
@@ -220,7 +246,7 @@ Through Creative Solutions</b></h1>
         <p align="center"><br>
             <br> 
             <br>
-            <button style="background: #00FF00;" href="#contact"><a href="abc">Get Started</a></button>
+            <button style="background: #00FF00;"><a href="Loginnow.html">Get Started</a></button>
         <p>
             <br>
             <br>
@@ -247,24 +273,27 @@ Through Creative Solutions</b></h1>
     <br>
 <!--This is the Turning Ideas Into Masterpieces Section-->
     <div class="displaycards2">
-    <h2 align="left"><pre>Turning Ideas Into
+    <h2 align="center" style="margin-left:80px"><pre>Turning Ideas Into
 Masterpieces</pre></h2>
-<div style=" gap: 20px; justify-content: center; align-items: center;">
-    <img src="TIIM1.jpg" class="displaycardsimg">
+<div class="cards5">
+<div>
+    <img src="TIIM1 copy.jpg" style="width:80%; border-radius:20px;">
     </div>
-    <div style=" gap: 20px; justify-content: center; align-items: center;">
-    <img src="TIIM2.jpg" class="displaycardsimg">
-    </div>
-    <h3 align="center">Creative Design</h3>
+    <div>
+        <h3 align="center">Creative Design</h3>
                 <p align="center">Professional design solutions for your brand</p>
                 <h3 align="center">Development</h3>
                 <p align="center">Modern web development services</p>
+        <img src="TIIM2.jpg" style="width: 100%; height:auto; border-radius:20px;">
+    </div>
+</div>
                 <br>
                 <br>
                 <br>
 <!--This is the Services Section-->
 <div class="services">
-    <h2 align="left">Our <span class="parallelogram">Services</span></h2>
+    <h1 align="center"> </h1>
+    <h2>Our <span class="parallelogram">Services</span></h2>
     <pre><p style="font-size: 8px; margin-bottom: -50px;">We offer a range of powerful, creative design services
 designed to elevate your brand image and…</p></pre>
     <br>
@@ -283,7 +312,9 @@ designed to elevate your brand image and…</p></pre>
         <li><span style="padding-left: 15px;">Modern Graphics</span>     →</li>
         </div>
     </ol>
-
+    <div>
+            <img src="Blackofficelady.webp" class="imageupdate">
+    </div>
     </div>
 </div>
     <br>
@@ -297,7 +328,7 @@ designed to elevate your brand image and…</p></pre>
 <!--This is the meet our team section-->
 <div class="services">
     <div class="flexdisplay">
-    <h2>Meet<span class="parallelogram2">Our Team</span> </h2><h2><span class="expressservices" style="cursor:pointer;">Express Services <span style="background-color: #00FF00; border-radius: 100px;">⤤</span></span></h2>
+    <h2>Meet<span class="parallelogram2">Our Team</span> </h2><h2><span class="expressservices" >Express Services <span style="background-color: #00FF00; border-radius: 100px;">⤤</span></span></h2>
     </div>
     <div class="displaycards">
     <div class ="displaycardsmot">
@@ -340,13 +371,11 @@ designed to elevate your brand image and…</p></pre>
     </div>
     </div>
 </div>
-    <br>
-    <br>
-    <br>
-    <img src="Last part.png" style="width: 100%; height: auto px; border-radius: 100px;">
-    <br>
-    <br>
-    <br>
+<br>
+<br>
+<br>
+<br>
+    <img src="White Strip Element.png" style="width: 100%; height: auto px; border-radius: 0px;">
 <!--This is the contact us section-->
 <div class="cards">
     <div class="contactus" style="padding: 20px; color: white; width: 50%; text-align: left;">
@@ -381,8 +410,8 @@ designed to elevate your brand image and…</p></pre>
                 <td>near block 47,70 wapping hall, London E1W 3SS</td>
             </tr>
             <tr>
-                <td><a href=address>See on Map</a></td>
-                <td><a href=address>See on Map</a></td>
+                <td><a href="https://www.google.com/maps/place/London,+UK/@51.5286416,-0.1015987,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D">See on Map</a></td>
+                <td><a href="https://www.google.com/maps/place/London,+UK/@51.5286416,-0.1015987,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D">See on Map</a></td>
             </tr>
         </table>
         <br>
@@ -390,10 +419,9 @@ designed to elevate your brand image and…</p></pre>
         <div style="text-align: center;">
             Sign up for future updates<br>
             <br>
-            <input type="email" placeholder="Enter your email" style="padding: 10px; border-radius: 50px; border: none; width: 200px;">
+            <input type="email" placeholder="Enter your email" style="padding: 10px; border-radius: 50px; border: none; width: 120px;">
             <button style="background-color: #000; color: #fff; border-radius: 50px; padding: 10px 20px; border: none; cursor: pointer;">Subscribe</button>
         </div>
     </footer>
 </body>
 </html>
-
